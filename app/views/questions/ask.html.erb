@@ -1,4 +1,13 @@
-<form action="answer" data-turbo="false">
-  <input type="text" name="question">
-  <input type="submit" value="Ask!">
+
+  <%# <input type="text" name="question">
+  <input type="submit" value="Ask!"> %>
+
+<form action="answer" data-turbo="false" class="d-flex justify-content-start">
+  <div class="col-auto m-2 p-2">
+    <label for="inputPassword2" class="visually-hidden">Password</label>
+    <input type="text" class="form-control" id="question" name="question" placeholder="Question?">
+  </div>
+  <div class="col-auto p-3">
+    <button type="submit" class="btn btn-primary">Ask!</button>
+  </div>
 </form>

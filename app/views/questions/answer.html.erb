@@ -1,4 +1,17 @@
-<%= params[:question] %> <br>
-<%= @answer %> <br>
 
-<%= link_to 'Ask a new question ?', ask_path %>
+<figure class="m-3">
+  <blockquote class="blockquote">
+    <p><strong><%= params[:question] %></strong></p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    <cite title="Source Title">You</cite>
+  </figcaption>
+
+  <blockquote class="blockquote">
+    <p><strong><%= @answer %> <br></strong></p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    <cite title="Source Title">Your Coach</cite>
+  </figcaption>
+  <div class="link"><%= link_to "Ask a new question ?", ask_path %></div>
+  </figure>
